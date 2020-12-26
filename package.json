@@ -1,0 +1,32 @@
+{
+  "name": "silica-package-github",
+  "version": "1.0.0",
+  "description": "Generate Silica package json from Github releases",
+  "main": "index.js",
+  "scripts": {
+    "prestart": "if [ ! -d node_modules ]; then npm install; fi",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "silica-package-github": "index.js"
+  },
+  "keywords": [
+    "silica",
+    "github"
+  ],
+  "author": "osy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/osy/silica-package-github/issues"
+  },
+  "homepage": "https://github.com/osy/silica-package-github",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/osy/silica-package-github.git"
+  },
+  "dependencies": {
+    "@octokit/rest": "^17.11.2",
+    "convict": "^5.2.0",
+    "express": "^4.17.1"
+  }
+}
